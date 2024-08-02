@@ -47,7 +47,7 @@
             font-size: 20px;
             font-weight: bold;
             position: absolute;
-            inset: 380px auto auto 170px;
+            inset: 380px auto auto 160px;
         }
 
         .elian-image{
@@ -134,6 +134,27 @@
             position: absolute;
             inset: 380px auto auto 345px;
         }
+
+        h1{
+            color: red;
+        }
+
+        .animacion{
+            font-size: 2em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
         
     </style>
     </head>
@@ -164,5 +185,7 @@
             <img src="dani.png" class="dani-image">
 
         </div>
+
+        <h1 class="animacion">DESAFIO SABADO EQUIPO CONFIRMADO</h1>
     </body>
 </html>
